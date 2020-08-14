@@ -20,6 +20,7 @@ import { getQueryParamByName } from './utils/dev';
 
 import rinkebyAddresses from './references/contracts/rinkeby';
 import goerliAddresses from './references/contracts/goerli';
+import thaichainAddresses from './references/contracts/thaichain';
 import ropstenAddresses from './references/contracts/ropsten';
 
 let _maker;
@@ -30,6 +31,7 @@ const otherNetworksOverrides = [
     contracts: rinkebyAddresses
   },
   { network: 'goerli', contracts: goerliAddresses },
+  { network: 'thaichain', contracts: thaichainAddresses },
   { network: 'ropsten', contracts: ropstenAddresses }
 ].reduce((acc, { network, contracts }) => {
   for (const [contractName, contractAddress] of Object.entries(contracts)) {
@@ -50,7 +52,7 @@ export async function instantiateMaker({
   testchainId,
   backendEnv
 }) {
-  const addressOverrides = ['rinkeby', 'ropsten', 'goerli'].some(
+  const addressOverrides = ['rinkeby', 'ropsten', 'goerli','thaichain'].some(
     networkName => networkName === network
   )
     ? otherNetworksOverrides

@@ -16,7 +16,7 @@ export default [
     key: 'ETH-A', // the actual ilk name used in the vat
     gem: 'ETH', // the actual asset that's being locked
     currency: ETH, // the associated dai.js currency type
-    networks: ['kovan', 'mainnet', 'testnet', 'rinkeby', 'ropsten', 'goerli']
+    networks: ['kovan', 'mainnet', 'testnet', 'rinkeby', 'ropsten', 'goerli','thaichain']
   },
   {
     slug: 'bat-a',
@@ -24,7 +24,7 @@ export default [
     key: 'BAT-A',
     gem: 'BAT',
     currency: BAT,
-    networks: ['kovan', 'mainnet', 'testnet', 'rinkeby', 'ropsten', 'goerli']
+    networks: ['kovan', 'mainnet', 'testnet', 'rinkeby', 'ropsten', 'goerli','thaichain']
   },
   {
     slug: 'usdc-a',
@@ -32,7 +32,7 @@ export default [
     key: 'USDC-A',
     gem: 'USDC',
     currency: USDC,
-    networks: ['kovan', 'mainnet', 'testnet', 'rinkeby', 'ropsten', 'goerli'],
+    networks: ['kovan', 'mainnet', 'testnet', 'rinkeby', 'ropsten', 'goerli','thaichain'],
     decimals: 6
   },
   {
