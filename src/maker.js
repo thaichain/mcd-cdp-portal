@@ -52,7 +52,7 @@ export async function instantiateMaker({
   testchainId,
   backendEnv
 }) {
-  const addressOverrides = ['rinkeby', 'ropsten', 'goerli','thaichain'].some(
+  const addressOverrides = ['rinkeby', 'ropsten', 'goerli', 'thaichain'].some(
     networkName => networkName === network
   )
     ? otherNetworksOverrides
